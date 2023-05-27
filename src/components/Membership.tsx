@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
+import BtnView from "./BtnView";
 
 const Membership = () => {
   return (
@@ -17,9 +18,7 @@ const Membership = () => {
           <p className="font-medium w-[60%]">
             Be a Vape Pi member and get your special exclusive offers
           </p>
-          <button className="text-center backdrop-blur bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(0,0,0,0.6)] transition-all duration-200 px-6 py-2 rounded-full">
-            View
-          </button>
+          <BtnView/>
         </div>
       </div>
       <div className="w-52  bg-zinc-800 relative rounded-md">
@@ -36,7 +35,9 @@ const Membership = () => {
         <div className="absolute px-3 py-3 left-0 bottom-0 flex justify-between items-start backdrop-blur bg-[rgba(39,39,42,0.5)] cursor-pointer ">
           <div>
             <h3 className="text-xl">Devices</h3>
-            <p className="text-sm w-[70%] font-extralight">Find the best for you here!</p>
+            <p className="text-sm w-[70%] font-extralight">
+              Find the best for you here!
+            </p>
           </div>
           <ChevronRightIcon className="w-5 mt-2" />
         </div>
@@ -47,7 +48,9 @@ const Membership = () => {
           <div className="absolute px-3 py-3 left-0 bottom-0 flex justify-between items-start backdrop-blur bg-[rgba(39,39,42,0.5)] cursor-pointer ">
             <div>
               <h3 className="text-xl">Pods</h3>
-              <p className="text-sm w-[70%] font-extralight">Variety of choices availability</p>
+              <p className="text-sm w-[70%] font-extralight">
+                Variety of choices availability
+              </p>
             </div>
             <ChevronRightIcon className="w-5 mt-2" />
           </div>
@@ -60,8 +63,10 @@ const Membership = () => {
           />
           <div className="absolute px-3 py-3 left-0 bottom-0 flex justify-between items-start backdrop-blur bg-[rgba(39,39,42,0.5)] cursor-pointer ">
             <div>
-              <h3 className="text-xl">Disposible</h3>
-              <p className="text-sm w-[70%] font-extralight">Easy, clean & superb flavor</p>
+              <h3 className="text-xl">Disposable</h3>
+              <p className="text-sm w-[70%] font-extralight">
+                Easy, clean & superb flavor
+              </p>
             </div>
             <ChevronRightIcon className="w-5 mt-2" />
           </div>

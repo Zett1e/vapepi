@@ -3,8 +3,8 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero/Hero";
 import Membership from "@/components/Membership";
 import Navbar from "@/components/Navbar";
-import NewReleased from "@/components/NewReleased";
-import Products from "@/components/Products";
+import NewReleased from "@/components/NewReleased/NewReleased";
+import Products from "@/components/Products/Products";
 
 export default function Home() {
   return (

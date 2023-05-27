@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import BtnView from "../BtnView";
 
 const HeroSlide = ({ img }: { img: string }) => {
   return (
@@ -17,9 +18,7 @@ const HeroSlide = ({ img }: { img: string }) => {
           Anytime Anywhere
         </h2>
         <p className="text-2xl font-medium drop-shadow-md">Starts from 10,000 MMK</p>
-        <button className="text-center backdrop-blur bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(0,0,0,0.6)] transition-all duration-200 px-6 py-2 rounded-full">
-          View
-        </button>
+        <BtnView/>
       </div>
     </div>
   );

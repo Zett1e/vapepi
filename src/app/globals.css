@@ -20,6 +20,7 @@ body {
 .MuiButtonBase-root {
   padding: 0 !important;
   transition: all 0.2s linear;
+  
 }
 
 .css-hn784z:hover .MuiButtonBase-root {
@@ -33,6 +34,10 @@ body {
   border-radius: 6px !important;
 }
 
+.css-hn784z,.css-1abc02a{
+  transform: translateY(-2rem);
+}
+
 .css-aq8pb7-MuiSvgIcon-root {
   font-size: 10px !important;
 }
@@ -43,4 +48,30 @@ body {
   border-top: 5px solid transparent;
   border-bottom: 2px solid transparent ;
   transform: rotateX(-10deg);
+}
+
+.flavor::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right,transparent,rgb(39,39,42) 60%);
+}
+
+.product::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right,transparent,rgb(39,39,42) 40%);
+}
+
+.css-ohwg9z {
+  overflow: visible !important;
 }

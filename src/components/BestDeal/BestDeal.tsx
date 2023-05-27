@@ -12,10 +12,10 @@ const BestDeal = () => {
     "bestDeal6",
   ];
   return (
-    <div className="px-24 text-center mt-10">
+    <div className="px-40 text-center mt-10">
       <h1 className="text-4xl font-bold">Best Deals</h1>
       <p className="font-semibold">Just For You</p>
-      <div className="flex justify-between mt-5">
+      <div className="flex justify-between mt-5 ">
         {bestDealImgs.map((img, index) => (
           <BestDealCard key={index} img={img} />
         ))}

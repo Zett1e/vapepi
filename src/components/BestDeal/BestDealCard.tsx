@@ -5,7 +5,7 @@ import { StarIcon } from "@heroicons/react/24/solid";
 const BestDealCard = ({ img }: { img: string }) => {
   return (
     <div>
-      <div className="bg-gray-200 rounded-md relative w-44 h-44 pt-3">
+      <div className="bg-gray-200 rounded-md relative w-40 h-40 pt-3">
         <Image
           src={`/images/bestDeals/${img}.png`}
           fill

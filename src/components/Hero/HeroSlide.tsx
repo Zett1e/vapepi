@@ -9,6 +9,7 @@ const HeroSlide = ({ img }: { img: string }) => {
         fill
         style={{ objectFit: "cover", objectPosition: "top" }}
         alt="vape background"
+        priority
       />
       <div className="absolute left-1/2 bottom-10 -translate-x-1/2 w-max text-white flex flex-col justify-center items-center space-y-3">
         <p className="text-2xl font-medium drop-shadow-md">The Best Look</p>

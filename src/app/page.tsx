@@ -1,4 +1,4 @@
-import BestDeal from "@/components/BestDeal";
+import BestDeal from "@/components/BestDeal/BestDeal";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero/Hero";
 import Membership from "@/components/Membership";

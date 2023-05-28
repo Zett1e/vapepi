@@ -40,7 +40,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="space-y-5 flex-1">
+        <div className="md:space-y-10 space-y-16 flex-1">
           <div className="space-y-3">
             <h4 className="font-semibold">Language</h4>
             <form>
@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
           <div>
             <h4 className="font-semibold">Follow Us On</h4>
-            <div className="flex gap-x-2 mt-2">
+            <div className="flex md:gap-x-2 flex-wrap gap-x-2 mt-2">
               <Image
                 className="cursor-pointer"
                 src={"/images/socialmedia/facebook.png"}

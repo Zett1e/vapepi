@@ -14,7 +14,7 @@ const HeroSlide = ({ img }: { img: string }) => {
       />
       <div className="absolute left-1/2 bottom-10 -translate-x-1/2 w-max text-white flex flex-col justify-center items-center space-y-3">
         <p className="text-2xl font-medium drop-shadow-md">The Best Look</p>
-        <h2 className="text-5xl tracking-wider drop-shadow-md font-bold">
+        <h2 className="md:text-5xl text-4xl md:tracking-wider drop-shadow-md font-bold">
           Anytime Anywhere
         </h2>
         <p className="text-2xl font-medium drop-shadow-md">Starts from 10,000 MMK</p>

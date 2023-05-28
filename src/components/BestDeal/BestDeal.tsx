@@ -14,10 +14,10 @@ export const bestDealImgs = [
 const BestDeal = () => {
   
   return (
-    <div className="px-40 text-center mt-10">
+    <div className="md:px-40 px-5 text-center mt-10">
       <h1 className="text-4xl font-bold">Best Deals</h1>
       <p className="font-semibold">Just For You</p>
-      <div className="flex justify-between mt-5 ">
+      <div className="flex justify-between flex-wrap mt-5 ">
         {bestDealImgs.map((img, index) => (
           <BestDealCard key={index} img={img} />
         ))}

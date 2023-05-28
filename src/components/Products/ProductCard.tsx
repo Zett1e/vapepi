@@ -17,6 +17,7 @@ import {
   ArrowSmallRightIcon,
 } from "@heroicons/react/24/solid";
 import SliderBtn from "../SliderBtn";
+import { useMediaQuery } from "@mui/material";
 
 interface Product {
   img: string;
@@ -24,10 +25,11 @@ interface Product {
 }
 
 const ProductCard = ({ product }: { product: Product }) => {
+  const mobile = useMediaQuery('(max-width:767px)');
   return (
     <div className="product select-none text-white relative w-full h-72 bg-zinc-800 rounded-md overflow-hidden">
-      <Image src={`/images/products/${product.img}`} fill alt="product" />
-      <div className="absolute overflow-hidden w-[44rem] top-5 right-5 z-30 ">
+      <Image className="md:object-contain object-fill md:object-left object-right" src={`/images/products/${product.img}`} fill alt="product" />
+      <div className="absolute overflow-hidden md:w-[44rem] w-full top-5 md:right-5 right-0 z-30 ">
         <Swiper
           navigation={{
             nextEl: ".button-next-slide",
@@ -35,7 +37,7 @@ const ProductCard = ({ product }: { product: Product }) => {
           }}
           // navigation
           modules={[Navigation]}
-          slidesPerView={4}
+          slidesPerView={mobile ? 1 : 4}
           spaceBetween={10}
           className="mySwiper relative"
         >

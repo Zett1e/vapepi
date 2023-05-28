@@ -4,7 +4,7 @@ import { StarIcon } from "@heroicons/react/24/solid";
 
 const BestDealCard = ({ img }: { img: string }) => {
   return (
-    <div className="text-center">
+    <div className="text-center flex flex-col items-center justify-center">
       <div className="bg-gray-200 rounded-md relative w-40 h-40 pt-3">
         <Image
           src={`/images/bestDeals/${img}.png`}

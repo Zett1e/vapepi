@@ -10,8 +10,8 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div>
-      <div className="px-40 mt-10 flex gap-x-10">
-        <div className="space-y-16">
+      <div className="md:px-40 px-5 mt-10 flex flex-wrap gap-y-10 md:gap-x-10 gap-x-5">
+        <div className="space-y-16 md:w-auto w-[40%]">
           <div className="space-y-3">
             <h4 className="font-semibold">Customer Service</h4>
             <div className="flex items-center gap-x-1">
@@ -40,7 +40,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="space-y-5">
+        <div className="space-y-5 flex-1">
           <div className="space-y-3">
             <h4 className="font-semibold">Language</h4>
             <form>
@@ -115,11 +115,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="space-y-3">
+        <div className="space-y-3 flex-1">
           <h4 className="font-bold">Contact Us</h4>
           <div className="flex items-start gap-x-1">
-            <MapPinIcon className="w-5" />
-            <p className="w-60">
+            <MapPinIcon className="w-5 hidden md:block" />
+            <p className="md:w-60 flex-1">
+            <MapPinIcon className="w-5 h-5 flex-1 inline md:hidden " />
+            <span className="md:hidden">&nbsp;</span>
               Lay Daunt Kan Main Road, Cashmere Stop, Near Zawana, Thingyun Tsp,
               Yangon
             </p>

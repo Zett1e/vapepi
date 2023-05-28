@@ -23,12 +23,12 @@ const NewReleased = () => {
   const newFlavorImgs = ["newFlavor1", "newFlavor2"];
   return (
     <div className="text-center mt-10">
-      <div className="px-40">
+      <div className="md:px-40 px-5">
         <h1 className="text-5xl font-bold">
           <span className="text-red-500">New</span> Released
         </h1>
         <p className="font-semibold">Try Our Latest Flavors Here</p>
-        <div className="flex justify-between mt-5">
+        <div className="flex md:justify-between justify-center gap-y-3 flex-wrap mt-5">
           {newReleasedImgs.map((img, index) => (
             <NewReleasedCard key={index} img={img} />
           ))}
@@ -37,7 +37,7 @@ const NewReleased = () => {
           <p>View More</p> <ChevronRightIcon className="w-4" />
         </button>
       </div>
-      <div className="mt-10 pl-40 w-[88%] text-white">
+      <div className="mt-10 md:pl-40 pl-5 w-[88%] text-white">
         <Swiper
           navigation={{
             nextEl: ".button-next-slide",

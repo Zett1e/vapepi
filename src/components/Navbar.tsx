@@ -8,7 +8,7 @@ import {
 
 const Navbar = () => {
   return (
-    <div className="absolute left-0 top-0 z-10 w-full flex justify-between items-center px-20 mt-5">
+    <div className="absolute left-0 top-0 z-10 w-full flex justify-between items-center md:px-20 px-5 mt-5">
       <div className="cursor-pointer">
         <Image
           src={"/images/logo/white.png"}

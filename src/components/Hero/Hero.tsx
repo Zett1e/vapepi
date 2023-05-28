@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
 import HeroSlide from "./HeroSlide";
 import Carousel from "react-material-ui-carousel";

@@ -63,7 +63,6 @@ body {
 
 @media screen and (max-width: 767px) {
   .flavor::before {
-    /* display: none; */
     background-image: none;
     background-color: rgba(0, 0, 0, 0.3);
   }
@@ -82,7 +81,6 @@ body {
 
 @media screen and (max-width: 767px) {
   .product::before {
-    /* display: none; */
     background-image: none;
     background-color: rgba(0, 0, 0, 0.3);
   }

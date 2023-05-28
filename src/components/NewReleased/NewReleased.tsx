@@ -2,20 +2,12 @@
 
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
 import React from "react";
-import Carousel from "react-material-ui-carousel";
-import SliderIcon from "../Hero/SliderIcon";
 import NewFlavorCard from "./NewFlavorCard";
 import NewReleasedCard from "./NewReleasedCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/navigation";
-
 import { Navigation } from "swiper";
-import {
-  ArrowSmallLeftIcon,
-  ArrowSmallRightIcon,
-} from "@heroicons/react/24/solid";
 import SliderBtn from "../SliderBtn";
 
 const NewReleased = () => {

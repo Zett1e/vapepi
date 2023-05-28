@@ -6,14 +6,17 @@ const Products = () => {
   const products = [
     {
       img: 'devices-mobile.png',
+      title: 'Devices',
       text: 'Find the best for you here!'
     },
     {
       img: 'pods-mobile.png',
+      title: 'Pods',
       text: 'Variety of choices availability'
     },
     {
       img: 'disposable-mobile.png',
+      title: 'Disposable',
       text: 'Easy, clean & superb flavor'
     },
   ]

@@ -4,7 +4,7 @@ import { StarIcon } from "@heroicons/react/24/solid";
 
 const BestDealCard = ({ img }: { img: string }) => {
   return (
-    <div>
+    <div className="text-center">
       <div className="bg-gray-200 rounded-md relative w-40 h-40 pt-3">
         <Image
           src={`/images/bestDeals/${img}.png`}
@@ -15,8 +15,8 @@ const BestDealCard = ({ img }: { img: string }) => {
           25% off
         </p>
       </div>
-      <p className="font-semibold">Refreshing Mint</p>
-      <p className="font-semibold">30,000MMK</p>
+      <p className="font-medium">Refreshing Mint</p>
+      <p className="font-medium">30,000MMK</p>
       <p className="line-through text-xs font-medium">30,000MMK</p>
       <div className="flex items-center justify-center gap-x-1 ">
         <StarIcon className="w-3 inline-block text-yellow-400" />

@@ -28,9 +28,9 @@ const ProductCard = ({ product }: { product: Product }) => {
         alt="product"
       />
       
-        <div className="absolute left-40 z-20 top-1/2 -translate-y-1/2 md:hidden">
-          <h3 className="text-5xl font-bold">{product.title}</h3>
-          <p className="w-[70%] text-lg">
+        <div className="absolute left-32 z-20 top-1/2 -translate-y-1/2 md:block hidden">
+          <h3 className="text-3xl font-bold">{product.title}</h3>
+          <p className="w-[70%]">
             {product.text}
           </p>
         </div>

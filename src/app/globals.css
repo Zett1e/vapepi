@@ -14,7 +14,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
- 
+  overflow-x: hidden;
 }
 
 .MuiButtonBase-root {
@@ -84,7 +84,7 @@ body {
   position: absolute;
   right: 10px;
   top: 50%;
-  transform: translateY(-60%);
+  transform: translateY(-50%);
   left: auto;
   z-index: 50;
   cursor: pointer;
@@ -94,8 +94,13 @@ body {
   position: absolute;
   left: 10px;
   top: 50%;
-  transform: translateY(-60%);
+  transform: translateY(-50%);
   right: auto;
   z-index: 50;
   cursor: pointer;
 }
+
+.swiper {
+  overflow: visible !important;
+}
+

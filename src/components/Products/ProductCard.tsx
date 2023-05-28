@@ -16,6 +16,7 @@ import {
   ArrowSmallLeftIcon,
   ArrowSmallRightIcon,
 } from "@heroicons/react/24/solid";
+import SliderBtn from "../SliderBtn";
 
 interface Product {
   img: string;
@@ -26,7 +27,7 @@ const ProductCard = ({ product }: { product: Product }) => {
   return (
     <div className="product select-none text-white relative w-full h-72 bg-zinc-800 rounded-md overflow-hidden">
       <Image src={`/images/products/${product.img}`} fill alt="product" />
-      <div className="absolute w-[44rem] top-5 right-5 z-30 ">
+      <div className="absolute overflow-hidden w-[44rem] top-5 right-5 z-30 ">
         <Swiper
           navigation={{
             nextEl: ".button-next-slide",
@@ -43,12 +44,8 @@ const ProductCard = ({ product }: { product: Product }) => {
               <BestDealCard img={img} />
             </SwiperSlide>
           ))}
-          <div className="button-next-slide slider-icon  backdrop-blur bg-[rgba(0,0,0,0.5)] rounded-md py-12 px-3">
-            <ArrowSmallRightIcon className="w-5" />
-          </div>
-          <div className="button-prev-slide slider-icon  backdrop-blur bg-[rgba(0,0,0,0.5)] rounded-md py-12 px-3">
-            <ArrowSmallLeftIcon className="w-5" />
-          </div>
+          <SliderBtn direction='next' flavor={false} />
+          <SliderBtn direction='prev' flavor={false} />
         </Swiper>
       </div>
     </div>

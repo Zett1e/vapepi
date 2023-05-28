@@ -43,23 +43,36 @@ const Footer = () => {
         <div className="space-y-5">
           <div className="space-y-3">
             <h4 className="font-semibold">Language</h4>
-            <div className="space-x-3">
-              <input
-                type="radio"
-                name="language"
-                id="unicode"
-                value="unicode"
-              />
-              <label htmlFor="unicode">Myanmar (Unicode)</label>
-            </div>
-            <div className="space-x-3">
-              <input type="radio" name="language" id="zawgyi" value="zawgyi" />
-              <label htmlFor="zawgyi">Myanmar (Zawgyi)</label>
-            </div>
-            <div className="space-x-3">
-              <input type="radio" name="language" id="eng" value="english" />
-              <label htmlFor="eng">English</label>
-            </div>
+            <form>
+              <div className="space-x-3">
+                <input
+                  type="radio"
+                  name="language"
+                  id="unicode"
+                  value="unicode"
+                />
+                <label htmlFor="unicode">Myanmar (Unicode)</label>
+              </div>
+              <div className="space-x-3">
+                <input
+                  type="radio"
+                  name="language"
+                  id="zawgyi"
+                  value="zawgyi"
+                />
+                <label htmlFor="zawgyi">Myanmar (Zawgyi)</label>
+              </div>
+              <div className="space-x-3">
+                <input
+                  type="radio"
+                  name="language"
+                  id="eng"
+                  value="english"
+                  defaultChecked
+                />
+                <label htmlFor="eng">English</label>
+              </div>
+            </form>
           </div>
           <div>
             <h4 className="font-semibold">Follow Us On</h4>
@@ -118,7 +131,7 @@ const Footer = () => {
         </div>
         <div>
           <h4 className="font-bold ml-5">Download Our App</h4>
-          <Image src={'/images/frame.png'} width={200} height={200} alt='QR' />
+          <Image src={"/images/frame.png"} width={200} height={200} alt="QR" />
         </div>
       </div>
       <p className="text-center mt-5 text-sm">
